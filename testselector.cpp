@@ -46,9 +46,28 @@ void testSelector::on_pushButton_clicked()
 
     QSqlDatabase mdbse = QSqlDatabase::database();
     QSqlQuery qry_check(mdbse);
+    
+     QSqlQuery qry_checkquiz(mdbse); // to check the duplication of test taken
+    //mdbse.open();
+
+    qry_checkquiz.prepare("SELECT stuUserName,quizName FROM stuTestGradeRecord");
+    qry_checkquiz.exec();
+     bool stop = false;
+    while(qry_checkquiz.next())
+    {
+        QString stuName = qry_checkquiz.value(0).toString();
+        QString quizName = qry_checkquiz.value(1).toString();
+
+        if(stuName==stuUserName && quizName == name)
+        {
+            QMessageBox::information(this,"User Input","You have already taken this quiz");
+            stop = true;
+        }
+    }
+    
     qry_check.prepare("SELECT  quizName FROM availableQuiz");
     qry_check.exec();
-    while(qry_check.next())
+    while(qry_check.next() && !stop)
     {
         QString teacherUserName = qry_check.value(0).toString();
         if(teacherUserName==name)
