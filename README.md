@@ -27,8 +27,13 @@ SQLite Database
 I used QT environment for the graphical user interface. There will be multiple choice questions in which the teacher can choose the number of questions and the points associated with the question. The application can be used by both teacher and student. Students can take the test whereas teachers can set the question points associated with the questions and see those things on the backend. Students' input will be stored in the SQLlite database which the teacher can see using a key.
 
 There will be a main window where teacher or student can enter their login credentials to get into the app. If they doesn't have login credentials, they can register on main window.
+
 For students, After login they will be given choice to take the quiz or see the grade of previous quiz.
-If a student chooses take the quiz, he gets to choose the test from the list to take. After that, the quiz window appears where the student can take the quiz and submit. 
+
+If a student chooses take the quiz, he gets to choose the test from the list to take. 
+
+After that, the quiz window appears where the student can take the quiz and submit. 
+
 For teacher, After login they will see a window where they can set the question or see the grade of all the students.
 
 
@@ -38,9 +43,13 @@ Challenges and Solutions:
 
 There come many challenges, form forgetting to put comma, or other symbols and stuck for hours to major design choices and its implementation. My major challenges during making this app are:
 
-The first problem was to be able to read and implement the reference documents to perform a specific task. Though the language looks simple and gives the impression that it can be done in a small amount of time, it is not always the case: reading, understanding and  searching for the right question on the internet is a big challenge.
+The first problem was to be able to read and implement the reference documents to perform a specific task. 
+Though the language looks simple and gives the impression that it can be done in a small amount of time, it is not always the case: reading, understanding and  searching for the right question on the internet is a big challenge.
+
 The other challenging part is naming the variable and object name effectively. It is so important to name them in an effective manner- I believe just having a good name for a variable makes debugging so easy.
+
 Using debug and print functions is very helpful to track the program.
+
 Sitting in front of computer for a long time without much progress in the project is also a major challenge.
 
 
