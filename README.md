@@ -5,11 +5,13 @@ ID 23758569
 Instructor: Dr. Azhar
 
 
+
 Introduction 
 
 We the student of CSC 211H class were required to work on the technology other than from our class syllabus and implement techniques we learned on class on our own project. We called this project as Honors Project and this Honors project is required for us to pass CSC211H class.
 	We are living through the unprecedented time and the pandemic due to Covid19 is still a big threat in our and our loved ones daily life. With the development of a Covid19 vaccine, we believe we are finally getting out of this pandemic. But, the impact of this pandemic will be long lasting and life will be different than it previously used to be. 
 	For my project, I made a Quiz App which I named as Covid19QuizApp. A app, which can be used by teachers to set the quiz, grade the quiz and track the performance of students, and students can use the app to take the quiz, see the score and track their performance along the time. I hope to develop this small project of mine to something big in the future.
+  
   
   
 Tools Used
@@ -19,6 +21,8 @@ For this quiz App, I have used various technologies to  according to the need an
 C++
 Qt Creator 4.13.3 (Community)
 SQLite Database
+
+
 
 
 
@@ -35,6 +39,9 @@ If a student chooses take the quiz, he gets to choose the test from the list to 
 After that, the quiz window appears where the student can take the quiz and submit. 
 
 For teacher, After login they will see a window where they can set the question or see the grade of all the students.
+
+
+
 
 
 
