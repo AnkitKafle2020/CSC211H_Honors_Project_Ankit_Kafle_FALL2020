@@ -50,6 +50,8 @@ void MainWindow::on_stuLoginPushButton_clicked()
         if(userName == name && password ==pass && password != NULL && userName != NULL)
         {
             passwordMatch = true;
+            ui->stuUserNameSILineEdit->clear();
+            ui->stuPasswordSILineEdit->clear();
 
             //this->close();
 
@@ -98,6 +100,8 @@ void MainWindow::on_teacherLoginPushButton_clicked()
         {
             //calling the teacher class if user name and password mathches
             passwordMatch = true;
+            ui->teacherUserNameLineEdit->clear();
+            ui->teacherPasswordLineEdit->clear();
            // this->close();
             teachUI = new teacherClass();
             teachUI->setModal(true);
