@@ -1,2 +1,0 @@
-I have included my database file which probably wont work immediately afterdownloading. 
-The connection to database is on mainwindow class (in counstuctor). After downloading the database, you can change the path of database to make it work.
